@@ -17,6 +17,7 @@
     <!-- Icon Font CSS -->
     <link rel="stylesheet" href="assets/css/plugins/all.min.css">
     <link rel="stylesheet" href="assets/css/plugins/flaticon.css">
+    <link rel="stylesheet" href="assets/css/plugins/tailwind.min.css">
 
     <!-- Plugins CSS -->
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
@@ -26,6 +27,7 @@
 
     <!-- Main Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/plugins/hcaptcha.js" ></script>
 
 
     <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
@@ -99,88 +101,6 @@
 
                     <!-- Header Meta Start -->
                     <div class="header-meta">
-                        <!-- Header Cart Start -->
-                        <div class="header-cart dropdown">
-                            <button class="cart-btn" data-bs-toggle="dropdown">
-                                <i class="flaticon-shopping-cart"></i>
-                                <span class="count">0</span>
-                            </button>
-                            <!-- Header Dropdown Cart Start -->
-                            <div class="dropdown-menu dropdown-cart">
-                                <!-- Dropdown Cart Items Start -->
-                                <div class="cart-items">
-                                    <!-- Single Cart Item Start -->
-                                    <div class="single-cart-item">
-                                        <div class="item-image">
-                                            <img src="assets/images/shop-cart-1.jpg" alt="cart">
-                                        </div>
-                                        <div class="item-content">
-                                            <h4 class="title"><a href="#">Apple Iphone X</a></h4>
-                                            <span class="quantity">2 x $59.99</span>
-                                        </div>
-                                        <button class="btn-close"></button>
-                                    </div>
-                                    <!-- Single Cart Item End -->
-                                    <!-- Single Cart Item Start -->
-                                    <div class="single-cart-item">
-                                        <div class="item-image">
-                                            <img src="assets/images/shop-cart-2.jpg" alt="cart">
-                                        </div>
-                                        <div class="item-content">
-                                            <h4 class="title"><a href="#">Sony Xperia Tablet</a></h4>
-                                            <span class="quantity">2 x $59.99</span>
-                                        </div>
-                                        <button class="btn-close"></button>
-                                    </div>
-                                    <!-- Single Cart Item End -->
-                                    <!-- Single Cart Item Start -->
-                                    <div class="single-cart-item">
-                                        <div class="item-image">
-                                            <img src="assets/images/shop-cart-3.jpg" alt="cart">
-                                        </div>
-                                        <div class="item-content">
-                                            <h4 class="title"><a href="#">Camera Digital</a></h4>
-                                            <span class="quantity">2 x $59.99</span>
-                                        </div>
-                                        <button class="btn-close"></button>
-                                    </div>
-                                    <!-- Single Cart Item End -->
-                                </div>
-                                <!-- Dropdown Cart Items End -->
-                                <!-- Dropdown Cart Total Start -->
-                                <div class="cart-total">
-                                    <span class="label">Subtotal:</span>
-                                    <span class="value">0</span>
-                                </div>
-                                <!-- Dropdown Cart Total End -->
-                                <!-- Dropdown Cart Button Start -->
-                                <div class="cart-btns">
-                                    <a class="btn" href="#">View Cart</a>
-                                    <a class="btn btn-2" href="#">Checkout</a>
-                                </div>
-                                <!-- Dropdown Cart Button End -->
-                            </div>
-                            <!-- Header Dropdown Cart End -->
-                        </div>
-                        <!-- Header Cart End -->
-                        <!-- Header Search Start -->
-                        <div class="header-search">
-                            <a class="search-btn" href="#"><i class="flaticon-loupe"></i></a>
-                            <div class="search-wrap">
-                                <div class="search-inner">
-                                    <i id="search-close" class="flaticon-close search-close"></i>
-                                    <div class="search-cell">
-                                        <form action="#">
-                                            <div class="search-field-holder">
-                                                <input class="main-search-input" type="search" placeholder="Search Your Keyword...">
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Header Search End -->
-
                         <div class="header-btn d-none d-xl-block">
                             <a class="btn" href="login-register.html">Get Started</a>
                         </div>
@@ -259,7 +179,7 @@
 
 
         <!-- Page Banner Start -->
-        <div class="section page-banner-section" style="background-image: url(assets/images/bg/page-banner.jpg);">
+        <div class="section page-banner-section" style="background-image: url(assets/images/contact/contact_bg.jpeg);">
             <div class="shape-1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="944px" height="894px">
                     <defs>
@@ -376,71 +296,68 @@
                 <!-- Contact Wrap Start -->
                 <div class="contact-wrap">
                     <div class="row justify-content-center">
-                        <div class="col-lg-10">
-                            <!-- Contact Form Start -->
-                            <div class="contact-form">
-                                <div class="contact-form-wrap">
-                                    <div class="heading-wrap text-center">
-                                        <span class="sub-title"> request a quote</span>
-                                        <h3 class="title">How May We Help You!</h3>
+                        <div class="flex items-center bg-gray-100 dark:bg-gray-900">
+                            <div class="container mx-auto">
+                                <div class="max-w-xl mx-auto my-10 bg-white py-2 rounded-md shadow-sm">
+                                    <div class="text-center">
+                                        <h1 class="my-3 text-3xl text-gray-700 dark:text-gray-200">
+                                            Contact Us
+                                        </h1>
+                                        <p>
+                                            Fill up the form below to send us a message.
+                                        </p>
                                     </div>
-                                    <form action="#">
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <!-- Single Form Start -->
-                                                <div class="single-form">
-                                                    <input type="text" placeholder="Name *">
+                                    <div class="m-7">
+                                        <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                                            <input type="hidden" name="access_key" value="0a686651-7acf-4b80-a680-efab961e4213" />
+                                            <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                                            <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+                                            <div class="flex mb-6 space-x-4">
+                                                <div class="w-full md:w-1/2">
+                                                    <label for="first_name" class="block mb-2">First Name</label>
+                                                    <input type="text" name="First Name" id="first_name" placeholder="John" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
                                                 </div>
-                                                <!-- Single Form End -->
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <!-- Single Form Start -->
-                                                <div class="single-form">
-                                                    <input type="email" placeholder="Email *">
+                                                <div class="w-full md:w-1/2">
+                                                    <label for="last_name" class="block mb-2">Last Name</label>
+                                                    <input type="text" name="Last Name" id="last_name" placeholder="Doe" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
                                                 </div>
-                                                <!-- Single Form End -->
                                             </div>
-                                            <div class="col-sm-12">
-                                                <!-- Single Form Start -->
-                                                <div class="single-form">
-                                                    <input type="text" placeholder="Subject *">
+
+                                            <div class="flex mb-6 space-x-4">
+                                                <div class="w-full md:w-1/2">
+                                                    <label for="email" class="block mb-2">Email Address</label>
+                                                    <input type="email" name="email" id="email" placeholder="you@company.com" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
                                                 </div>
-                                                <!-- Single Form End -->
-                                            </div>
-                                            <div class="col-sm-12">
-                                                <!-- Single Form Start -->
-                                                <div class="single-form">
-                                                    <textarea placeholder="Write A Message"></textarea>
+
+                                                <div class="w-full md:w-1/2">
+                                                    <label for="phone" class="block text-sm">Phone Number</label>
+                                                    <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
                                                 </div>
-                                                <!-- Single Form End -->
                                             </div>
-                                            <div class="col-sm-12">
-                                                <!--  Single Form Start -->
-                                                <div class="form-btn">
-                                                    <button class="btn" type="submit">Send Message</button>
-                                                </div>
-                                                <!--  Single Form End -->
+                                            <div class="mb-6">
+                                                <label for="message" class="block mb-2 info-content">Your Message</label>
+
+                                                <textarea rows="5" name="message" id="message" placeholder="Your Message" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required></textarea>
                                             </div>
-                                        </div>
-                                    </form>
+                                            <div class="mb-6">
+                                                <button type="submit" class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none">
+                                                    Send Message
+                                                </button>
+                                            </div>
+                                            <p class="text-base text-center text-gray-400" id="result"></p>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- Contact Form End -->
                         </div>
+                        <!-- Contact Form End -->
                     </div>
                 </div>
                 <!-- Contact Wrap End -->
             </div>
         </div>
         <!-- Contact End -->
-
-        <!-- Contact Map Start -->
-        <div class="section contact-map-section">
-            <div class="contact-map-wrap">
-                <iframe scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=Da%20Nang&t=m&z=10&output=embed&iwloc=near" title="Da Nang" aria-label="Da Nang" frameborder="0"></iframe>
-            </div>
-        </div>
-        <!-- Contact Map End -->
 
 
         <!-- Footer Section Start -->

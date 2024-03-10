@@ -8882,6 +8882,11 @@ textarea:-ms-input-placeholder {
   margin-top: 2px;
 }
 
+.info-icon img {
+  display: block;
+  margin: 0 auto;
+}
+
 .widget-info ul li .info-text {
   font-size: 16px;
   line-height: 20px;
