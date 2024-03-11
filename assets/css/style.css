@@ -283,7 +283,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .section-title .sub-title {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 30px;
   font-family: "Jost", sans-serif;
   font-weight: 500;
@@ -338,7 +338,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .section-title2 .sub-title {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 30px;
   font-family: "Barlow", sans-serif;
   font-weight: 800;
