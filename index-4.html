@@ -800,36 +800,61 @@
                             <div class="contact-form">
                                 <div class="contact-form-wrap">
                                     <div class="heading-wrap text-center">
-                                        <span class="sub-title">Leave us massage</span>
+                                        <span class="sub-title">Leave us a massage</span>
                                         <h3 class="title">How May We Help You!</h3>
                                     </div>
-                                    <form action="#">
+                                    <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                                        <input type="hidden" name="access_key" value="0a686651-7acf-4b80-a680-efab961e4213" />
+                                        <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                                        <input type="checkbox" name="botcheck" id="" style="display: none;" />
                                         <div class="row">
                                             <div class="col-sm-6">
                                                 <!-- Single Form Start -->
                                                 <div class="single-form">
-                                                    <input type="text" placeholder="Name *">
+                                                    <label for="first_name"></label>
+                                                    <input type="text" name="First Name" id="first_name" placeholder="First Name *">
                                                 </div>
                                                 <!-- Single Form End -->
                                             </div>
                                             <div class="col-sm-6">
                                                 <!-- Single Form Start -->
                                                 <div class="single-form">
-                                                    <input type="email" placeholder="Email *">
+                                                    <label for="last_name"></label>
+                                                    <input type="text" name="Last Name" id="last_name" placeholder="Last Name *">
+                                                </div>
+                                                <!-- Single Form End -->
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <!-- Single Form Start -->
+                                                <div class="single-form">
+                                                    <label for="phone"></label>
+                                                    <input type="tel" name="Phone" id="phone" placeholder="Phone number *">
+                                                </div>
+                                                <!-- Single Form End -->
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <!-- Single Form Start -->
+                                                <div class="single-form">
+                                                    <label for="email"></label>
+                                                    <input type="email" name="Email" id="email" placeholder="Email *">
                                                 </div>
                                                 <!-- Single Form End -->
                                             </div>
                                             <div class="col-sm-12">
                                                 <!-- Single Form Start -->
                                                 <div class="single-form">
-                                                    <input type="text" placeholder="Subject *">
+                                                    <label>
+                                                        <input type="text" name="subject" id="subject" placeholder="Subject *">
+                                                    </label>
                                                 </div>
                                                 <!-- Single Form End -->
                                             </div>
                                             <div class="col-sm-12">
                                                 <!-- Single Form Start -->
                                                 <div class="single-form">
-                                                    <textarea placeholder="Write A Message"></textarea>
+                                                    <label>
+                                                        <textarea name="message" id="message" placeholder="Write A Message"></textarea>
+                                                    </label>
                                                 </div>
                                                 <!-- Single Form End -->
                                             </div>
