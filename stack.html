@@ -27,6 +27,23 @@
     <!-- Main Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <style>
+        .experience-text {
+            position: relative;
+        }
+
+        .experience-text p{
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        #tech-stacks img {
+            width: 80px;
+            height: 80px;
+        }
+    </style>
 
     <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
     <!-- <link rel="stylesheet" href="assets/css/vendor/plugins.min.css">
@@ -64,6 +81,9 @@
                     <ul class="main-menu">
                         <li class="active-menu">
                             <a href="/service">Services</a>
+                        </li>
+                        <li>
+                            <a href="/stack">Our Stacks</a>
                         </li>
                         <li>
                             <a href="/about">About Us</a>
@@ -116,6 +136,9 @@
                     <li>
                         <a href="/service">Services</a>
                     </li>
+                    <li class="active-menu">
+                        <a href="/stack">Our Stacks</a>
+                    </li>
                     <li>
                         <a href="/about">About Us</a>
                     </li>
@@ -127,7 +150,7 @@
     <!-- Offcanvas End -->
 
     <!-- Page Banner Start -->
-    <div class="section page-banner-section" style="min-height: 360px; background-image: url(assets/images/bg/bg_22.jpeg);">
+    <div class="section page-banner-section" style="min-height: 360px; background-image: url(assets/images/bg/counter-bg2.jpg);">
         <div class="shape-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="944px" height="894px">
                 <defs>
@@ -170,10 +193,10 @@
                     <div class="col-lg-12">
                         <!-- Page Banner Content Start -->
                         <div class="page-banner text-center">
-                            <h2 class="title">Our Services</h2>
+                            <h2 class="title">Our Stacks</h2>
                             <ul class="breadcrumb justify-content-center">
                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Services</li>
+                                <li class="breadcrumb-item active" aria-current="page">Our Stacks</li>
                             </ul>
                         </div>
                         <!-- Page Banner Content End -->
@@ -184,124 +207,133 @@
     </div>
     <!-- Page Banner End -->
 
-    <!-- Choose Us Start -->
-    <div class="section techwix-choose-us-section techwix-choose-us-section-04 section-padding">
+
+    <!-- Skill Start -->
+    <div id="tech-stacks" class="section section-padding" style="background-image: url(assets/images/bg/service-bg6.jpg);">
         <div class="container">
-            <!-- Choose Us Wrap Start -->
-            <div class="choose-us-wrap">
-                <div class="choose-us-content-wrap">
+            <!-- Service Wrap Start -->
+            <div class="service-wrap">
+                <div class="section-title text-center">
+                    <h3 class="sub-title color-3">Our tech stacks</h3>
+                    <h2 class="title">We master a spectrum of technologies</h2>
+                </div>
+                <div class="service-content-wrap">
                     <div class="row">
-                        <div class="col-xl-3 col-lg-4 col-md-6">
-                            <!-- Choose Us Item Start -->
-                            <div class="choose-us-item-02">
-                                <div class="choose-us-img">
-                                    <img src="assets/images/ser-icon9.png" alt="">
+                        <div class="col-xl-3 col-sm-6">
+                            <!-- Service Item Start -->
+                            <div class="service-item-05">
+                                <div class="service-img">
+                                    <img src="assets/images/tech_stacks/android.png" alt="Android">
                                 </div>
-                                <div class="choose-us-content">
-                                    <h3 class="title"><a href="#">Infrastructure Technology</a></h3>
-                                    <p>Infrastructure Technology focuses on designing and managing essential systems for efficient operations and connectivity.</p>
+                                <div class="service-content">
+                                    <h3 class="title"><a href="service.html">Android Native</a></h3>
+                                    <p>Build rich feature apps run natively on Android devices with Java or Kotlin</p>
                                 </div>
                             </div>
-                            <!-- Choose Us Item End -->
+                            <!-- Service Item End -->
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6">
-                            <!-- Choose Us Item Start -->
-                            <div class="choose-us-item-02">
-                                <div class="choose-us-img">
-                                    <img src="assets/images/counter-3.png" alt="">
+                        <div class="col-xl-3 col-sm-6">
+                            <!-- Service Item Start -->
+                            <div class="service-item-05">
+                                <div class="service-img">
+                                    <img src="assets/images/tech_stacks/ios.png" alt="Ios">
                                 </div>
-                                <div class="choose-us-content">
-                                    <h3 class="title"><a href="#">Mobile App Development</a></h3>
-                                    <p>Create smart, smooth and beauty applications to run on Android, IOS devices and bring the business to your hands.</p>
+                                <div class="service-content">
+                                    <h3 class="title">IOS Native</h3>
+                                    <p>Build rich feature apps run natively on iPhone, iPad devices with ObjectC or Swift</p>
                                 </div>
                             </div>
-                            <!-- Choose Us Item End -->
+                            <!-- Service Item End -->
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6">
-                            <!-- Choose Us Item Start -->
-                            <div class="choose-us-item-02">
-                                <div class="choose-us-img">
-                                    <img src="assets/images/ser-icon10.png" alt="">
+                        <div class="col-xl-3 col-sm-6">
+                            <!-- Service Item Start -->
+                            <div class="service-item-05">
+                                <div class="service-img">
+                                    <img src="assets/images/tech_stacks/flutter_1.png" alt="Flutter">
                                 </div>
-                                <div class="choose-us-content">
-                                    <h3 class="title"><a href="#">Web App Development</a></h3>
-                                    <p>Creating software applications accessible via web browsers, revolutionizing online experiences and enhancing business efficiency.</p>
+                                <div class="service-content">
+                                    <h3 class="title">Flutter</h3>
+                                    <p>Build beautiful, natively compiled, multi-platform applications with dart</p>
                                 </div>
                             </div>
-                            <!-- Choose Us Item End -->
+                            <!-- Service Item End -->
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6">
-                            <!-- Choose Us Item Start -->
-                            <div class="choose-us-item-02">
-                                <div class="choose-us-img">
-                                    <img src="assets/images/ser-icon12.png" alt="">
+                        <div class="col-xl-3 col-sm-6">
+                            <!-- Service Item Start -->
+                            <div class="service-item-05">
+                                <div class="service-img">
+                                    <img src="assets/images/tech_stacks/react.png" alt="React">
                                 </div>
-                                <div class="choose-us-content">
-                                    <h3 class="title"><a href="#">Software Quality Assurance</a></h3>
-                                    <p>Minimizing potential risks by early detect problems to ensure your application system works accurate, efficiency and safety.</p>
+                                <div class="service-content">
+                                    <h3 class="title">React Native</h3>
+                                    <p>Build truly native apps multi-platform applications with typescript</p>
                                 </div>
                             </div>
-                            <!-- Choose Us Item End -->
+                            <!-- Service Item End -->
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6">
-                            <!-- Choose Us Item Start -->
-                            <div class="choose-us-item-02">
-                                <div class="choose-us-img">
-                                    <img src="assets/images/counter-1.png" alt="">
+                        <div class="col-xl-3 col-sm-6">
+                            <!-- Service Item Start -->
+                            <div class="service-item-05">
+                                <div class="service-img">
+                                    <img src="assets/images/tech_stacks/spring_boot.svg" alt="Spring boot">
                                 </div>
-                                <div class="choose-us-content">
-                                    <h3 class="title"><a href="#">IT Infrustructure </a></h3>
-                                    <p>Accelerate innovation with world-class tech teams We’ll match you to an entire.</p>
+                                <div class="service-content">
+                                    <h3 class="title">Spring Boot</h3>
+                                    <p>Create web application with Spring Boot and Java with focusing the business logic</p>
                                 </div>
                             </div>
-                            <!-- Choose Us Item End -->
+                            <!-- Service Item End -->
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6">
-                            <!-- Choose Us Item Start -->
-                            <div class="choose-us-item-02">
-                                <div class="choose-us-img">
-                                    <img src="assets/images/counter-2.png" alt="">
+
+                        <div class="col-xl-3 col-sm-6">
+                            <!-- Service Item Start -->
+                            <div class="service-item-05">
+                                <div class="service-img">
+                                    <img src="assets/images/tech_stacks/net.png" alt="Dotnet">
                                 </div>
-                                <div class="choose-us-content">
-                                    <h3 class="title"><a href="#">Data Management</a></h3>
-                                    <p>Accelerate innovation with world-class tech teams We’ll match you to an entire.</p>
+                                <div class="service-content">
+                                    <h3 class="title">.Net Framework</h3>
+                                    <p>Create desktop/web application with Dotnet framework and related technologies from Microsoft</p>
                                 </div>
                             </div>
-                            <!-- Choose Us Item End -->
+                            <!-- Service Item End -->
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6">
-                            <!-- Choose Us Item Start -->
-                            <div class="choose-us-item-02">
-                                <div class="choose-us-img">
-                                    <img src="assets/images/ser-icon21.png" alt="">
+
+                        <div class="col-xl-3 col-sm-6">
+                            <!-- Service Item Start -->
+                            <div class="service-item-05">
+                                <div class="service-img">
+                                    <img src="assets/images/tech_stacks/node-js.png" alt="NodeJs">
                                 </div>
-                                <div class="choose-us-content">
-                                    <h3 class="title"><a href="#">IT Management</a></h3>
-                                    <p>Accelerate innovation with world-class tech teams We’ll match you to an entire.</p>
+                                <div class="service-content">
+                                    <h3 class="title">NodeJs</h3>
+                                    <p>Execute Javascript in the backend side to create fast, scalable web application</p>
                                 </div>
                             </div>
-                            <!-- Choose Us Item End -->
+                            <!-- Service Item End -->
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6">
-                            <!-- Choose Us Item Start -->
-                            <div class="choose-us-item-02">
-                                <div class="choose-us-img">
-                                    <img src="assets/images/ser-icon22.png" alt="">
+
+                        <div class="col-xl-3 col-sm-6">
+                            <!-- Service Item Start -->
+                            <div class="service-item-05">
+                                <div class="service-img">
+                                    <img src="assets/images/tech_stacks/angular.svg" alt="Angular">
                                 </div>
-                                <div class="choose-us-content">
-                                    <h3 class="title"><a href="#">Data securet</a></h3>
-                                    <p>Accelerate innovation with world-class tech teams We’ll match you to an entire.</p>
+                                <div class="service-content">
+                                    <h3 class="title">Angular</h3>
+                                    <p>A popular web development framework to build complex web applications</p>
                                 </div>
                             </div>
-                            <!-- Choose Us Item End -->
+                            <!-- Service Item End -->
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Choose Us Wrap End -->
+            <!-- Service Wrap End -->
         </div>
     </div>
-    <!-- Choose Us End -->
+    <!-- Skill End -->
+
 
     <!-- Cta Start -->
     <div class="section techwix-cta-section-04 techwix-cta-section-06 techwix-cta-section-07" style="margin-bottom: 240px">
