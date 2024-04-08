@@ -2241,7 +2241,7 @@ textarea:-ms-input-placeholder {
 }
 
 .techwix-hero-section-03 {
-  height: 1020px;
+  min-height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
